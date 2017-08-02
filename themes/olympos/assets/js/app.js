@@ -1,0 +1,12 @@
+
+
+(function ($) {
+
+    //ajax filter movies
+    $('#moviesFilter').on('change','input, select', function() {
+        var $form = $(this).closest('form');
+
+        $form.request();
+    });
+
+})(jQuery);
